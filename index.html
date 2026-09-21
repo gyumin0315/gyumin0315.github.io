@@ -3,26 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>김규민 | 소개</title>
-    <meta name="description" content="김규민의 간단한 자기소개 페이지입니다." />
+    <title>김규민 | Profile</title>
+    <meta name="description" content="기계공학을 공부하는 김규민의 자기소개 페이지입니다." />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">KM<span>.</span></a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a class="active" href="index.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="vision.html">Vision</a>
+      </nav>
+    </header>
+
     <main class="container">
-      <section class="card profile-card">
+      <section class="card profile-card hero-card">
+        <div class="hero-line">
+          <span>01 / 04</span>
+          <span>PERSONAL PROFILE</span>
+        </div>
         <div class="profile-header">
           <div class="profile-text">
-            <p class="eyebrow">STUDENT PROFILE</p>
-            <h1>김규민</h1>
+            <p class="eyebrow">Mechanical Engineering Student</p>
+            <h1>김규민<span class="accent">.</span></h1>
             <p class="subtitle">국립공주대학교 기계자동차공학부</p>
           </div>
-          <div class="avatar" aria-label="프로필 이미지 자리">KM</div>
+          <div class="avatar" aria-label="프로필 이미지 자리"><span>KM</span></div>
         </div>
 
-        <p class="intro">기계공학을 좋아하는 학생</p>
+        <p class="intro">기계공학을 좋아하고, 움직이는 것들의 원리를 탐구하는 학생입니다.</p>
 
         <div class="info-grid">
           <div class="info-box">
+            <p class="section-number">01</p>
             <h2>관심 분야</h2>
             <div class="tags">
               <span>기계공학</span>
@@ -31,12 +46,14 @@
           </div>
 
           <div class="info-box">
+            <p class="section-number">02</p>
             <h2>수업</h2>
             <p>미래첨단기술의이해 I</p>
           </div>
         </div>
 
         <div class="contact-box">
+          <p class="section-number">03</p>
           <h2>Contact</h2>
           <ul>
             <li>
@@ -49,7 +66,11 @@
             </li>
           </ul>
         </div>
+
+        <a class="next-link" href="about.html">더 알아보기 <span aria-hidden="true">↗</span></a>
       </section>
     </main>
+
+    <footer class="site-footer">© 2026 KIM GYUMIN <span>DESIGNED WITH CURIOSITY</span></footer>
   </body>
-</html>
+</html>     
