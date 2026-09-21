@@ -39,7 +39,7 @@ body::before {
 
 .site-header,
 .site-footer {
-  width: min(980px, calc(100% - 40px));
+  width: min(1240px, calc(100% - 48px));
   margin: 0 auto;
 }
 
@@ -67,15 +67,19 @@ body::before {
 .accent { color: var(--accent); }
 
 .container {
+  width: min(1240px, 100%);
+  margin: 0 auto;
   display: grid;
   gap: 34px;
   padding: 34px 20px 60px;
+  justify-items: center;
   position: relative;
   z-index: 1;
 }
 
 .card {
-  width: min(820px, 100%);
+  width: 100%;
+  min-height: min(720px, calc(100vh - 150px));
   background: var(--surface);
   border: 1px solid var(--line);
   border-top: 6px solid var(--accent);
