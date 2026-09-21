@@ -92,6 +92,56 @@ body::before {
 
 .content-card { padding-top: 38px; }
 
+.profile-card { order: -1; }
+
+.toc-card { order: 0; }
+
+.toc-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.toc-list a {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) minmax(220px, 0.7fr);
+  align-items: center;
+  gap: 16px;
+  min-height: 78px;
+  padding: 18px 22px;
+  border: 2px solid var(--line);
+  border-left: 6px solid var(--accent);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--primary);
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.toc-list a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateX(6px);
+}
+
+.toc-list strong {
+  color: var(--accent);
+  font: 700 0.8rem Arial, sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.toc-list span {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.toc-list small {
+  color: var(--muted);
+  font: 700 0.78rem Arial, sans-serif;
+  letter-spacing: 0.08em;
+}
+
 .display-title {
   margin: 0 0 24px;
   font-size: clamp(2.5rem, 5vw, 4.4rem);
@@ -368,6 +418,9 @@ h2 {
   }
 
   .detail-grid { grid-template-columns: 1fr; }
+
+  .toc-list a { grid-template-columns: 40px 1fr; gap: 10px; }
+  .toc-list small { grid-column: 2; }
 
   .avatar {
     width: 82px;
